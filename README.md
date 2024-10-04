@@ -1,4 +1,7 @@
-## Step 7 implementation depends on the chosen option. Task says we need to use Delta Lake’s constraint validation.
+## Databricks Task
+Due to exceeding PUT object requests, the task wasn't completed fully.
+
+### Step 7 implementation depends on the chosen option. Task says we need to use Delta Lake’s constraint validation.
 !!!BUT, this approach have caveats.
 Delta Lake supports ACID guarantees which means either all the data will be appended or none of it will be appended.
 WE'd better have to filter out the values that don’t satisfy the constraints before appending if we’d like to add this data to the Delta table.
